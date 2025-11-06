@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodies – Organic Food Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Replace with exact fonts from Figma when identified -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo logo--pill" aria-label="Foodies home">Foodies</a>
+      <nav class="nav" aria-label="Primary">
+        <input type="checkbox" id="navToggle" class="nav__checkbox" />
+        <label for="navToggle" class="nav__toggle" aria-label="Toggle navigation">☰</label>
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link nav__link--active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Service Us</a></li>
+          <li><a href="#company">Our Company</a></li>
+          <li><a href="#pages">Pages</a></li>
+        </ul>
+      </nav>
+      <!-- no header CTA in the provided design -->
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">We're Serious<br />For Food.</h1>
+          <p class="hero__subtitle">We strive to provide a space where guests can connect with themselves and explore
+            their full potential, offering a safe place.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--cta" href="#get-started">Get Started <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="hero__media" aria-hidden="true">
+          <!-- Image placeholder: replace the src attribute below with your photo -->
+          <div class="hero__image">
+            <img class="hero__img" src="Assets/Women Cooking Salad.jpg" alt="Hero image" />
+
+            <!-- Rating badge (left, overlapping) -->
+            <div class="badge badge--rating"><span class="rating-label">5.0 Ratings</span><span class="stars"
+                aria-hidden="true">★★★★★</span></div>
+
+            <!-- Small quality pill (right) -->
+            <div class="badge badge--quality"><img class="avatar"
+                src="Assets/GoodQualitypic.png"
+                alt="" /> <span>Good Quality Product</span></div>
+
+            <!-- Decorative count / dots (optional) -->
+            <div class="dot-grid" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+      <div class="partners">
+        <div class="container partners__row" aria-label="Partner logos">
+          <span class="partner">LOGOIPSUM</span>
+          <span class="partner">logoipsum</span>
+          <span class="partner">logoipsum</span>
+          <span class="partner">logoipsum</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features" aria-label="Key features">
+      <div class="container features__grid features__grid--four">
+        <article class="feature feature--row">
+          <div class="feature__icon" aria-hidden="true">🚚</div>
+          <div>
+            <h3 class="feature__title">Free Shipping</h3>
+            <p class="feature__desc">Orders over $140</p>
+          </div>
+        </article>
+        <article class="feature feature--row">
+          <div class="feature__icon" aria-hidden="true">⚡</div>
+          <div>
+            <h3 class="feature__title">Quick Payment</h3>
+            <p class="feature__desc">100% secure payment</p>
+          </div>
+        </article>
+        <article class="feature feature--row">
+          <div class="feature__icon" aria-hidden="true">🎟️</div>
+          <div>
+            <h3 class="feature__title">Special Promo</h3>
+            <p class="feature__desc">Get special promo</p>
+          </div>
+        </article>
+        <article class="feature feature--row">
+          <div class="feature__icon" aria-hidden="true">🕑</div>
+          <div>
+            <h3 class="feature__title">24/7 Support</h3>
+            <p class="feature__desc">Ready support</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="products" id="products" aria-label="Popular products">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-head__title">Popular Products</h2>
+          <p class="section-head__desc">Hand-picked organic bestsellers.</p>
+        </div>
+        <div class="products__grid">
+          <!-- Product cards will be populated to match Figma layout -->
+          <article class="card">
+            <div class="card__media"></div>
+            <h3 class="card__title">Organic Avocados</h3>
+            <p class="card__meta">500g</p>
+            <div class="card__row">
+              <span class="price">$5.99</span>
+              <button class="btn btn--small btn--primary">Add</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"></div>
+            <h3 class="card__title">Baby Spinach</h3>
+            <p class="card__meta">250g</p>
+            <div class="card__row">
+              <span class="price">$2.49</span>
+              <button class="btn btn--small btn--primary">Add</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"></div>
+            <h3 class="card__title">Cherry Tomatoes</h3>
+            <p class="card__meta">300g</p>
+            <div class="card__row">
+              <span class="price">$3.29</span>
+              <button class="btn btn--small btn--primary">Add</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__media"></div>
+            <h3 class="card__title">Free-range Eggs</h3>
+            <p class="card__meta">12 pcs</p>
+            <div class="card__row">
+              <span class="price">$4.49</span>
+              <button class="btn btn--small btn--primary">Add</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <h2>Why Choose Foodies</h2>
+          <p>We partner with local farms to bring the freshest organic produce directly to you. Zero shortcuts, all
+            goodness.</p>
+        </div>
+        <div class="about__media" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-head__title">What Customers Say</h2>
+        </div>
+        <div class="testimonials__grid">
+          <blockquote class="quote">
+            <p>Best organic selection in town. Everything tastes amazing!</p>
+            <footer>— Anika</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Fast delivery and great prices. Highly recommended.</p>
+            <footer>— Rafi</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div class="container newsletter__inner">
+        <h2>Join Our Newsletter</h2>
+        <form class="newsletter__form" action="#" method="post">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required />
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">Foodies</div>
+      <nav aria-label="Footer">
+        <ul class="footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__copy">© 2025 Foodies. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+
+</html>
